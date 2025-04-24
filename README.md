@@ -1,9 +1,9 @@
 # PCA-EXP-3-PARALLEL-REDUCTION-USING-UNROLLING-TECHNIQUES AY 23-24
 <h3>AIM:</h3>
-<h3>ENTER YOUR NAME:DIVYA E</h3>
-<h3>REGISTER NO:212223230050</h3>
-<h3>EX. NO:03</h3>
-<h3>DATE:24-04-2025</h3>
+<h3>NAME: DIVYA E</h3>
+<h3>REGISTER NO : 212223230050</h3>
+<h3>EX. NO : 03</h3>
+<h3>DATE:24-04-25</h3>
 <h1> <align=center> PARALLEL REDUCTION USING UNROLLING TECHNIQUES </h3>
   Refer to the kernel reduceUnrolling8 and implement the kernel reduceUnrolling16, in which each thread handles 16 data blocks. Compare kernel performance with reduceUnrolling8 and use the proper metrics and events with nvprof to explain any difference in performance.</h3>
 
@@ -50,12 +50,7 @@ Memory Deallocation
 28.	Return from the main function.
 
 ## PROGRAM:
-```
-!pip install git+https://github.com/andreinechaev/nvcc4jupyter.git
-%load_ext nvcc4jupyter
-
-```
-```
+```cuda
 %%cuda
 #include <stdio.h>
 #include <cuda_runtime.h>
@@ -381,7 +376,7 @@ int main(int argc, char **argv)
 }
 ```
 ## OUTPUT:
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/3ca98abf-dd3d-4f46-b499-e43e139facb0)
 
 ## RESULT:
 Thus the program has been executed by unrolling by 8 and unrolling by 16. It is observed that gpu Unrolling16 has executed with less elapsed time than gpu Unrolling8 with blocks 2048,512.
